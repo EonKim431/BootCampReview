@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gsitm.projectcrm.mapper.CustomerMapper">
+	<resultMap id="customerResultMap" type="com.gsitm.projectcrm.dto.CustomerDto">
+        <id property="CUST_SN" column="cust_sn" />
+        <result property="CUST_NM" column="cust_nm" />
+        <result property="EML_ADDR" column="eml_addr" />
+        <result property="BRDT" column="brdt" />
+        <result property="HOME_TELNO" column="home_telno" />
+        <result property="MBL_TELNO" column="mbl_telno" />
+        <result property="PRIDTF_NO" column="pridtf_no" />
+        <result property="CR_NM" column="cr_nm" />
+        <result property="ROAD_NM_ADDR" column="road_nm_addr" />
+        <result property="PIC_SN_VL" column="pic_sn_vl" />
+        <result property="TKCG_DEPT_NM" column="tkcg_dept_nm" />
+        <result property="FRST_REG_DT" column="frst_reg_dt" />
+        <result property="FRST_RGTR_SN" column="frst_rgtr_sn" />
+        <result property="LAST_MDFCN_DT" column="last_mdfcn_dt" />
+        <result property="USE_YN" column="use_yn" />
+    </resultMap>
+    <select id="getDTOInfo" parameterType="Long" resultType="textLogDto">
+	SELECT cus_nm, man_nm, date, hour, content FROM textlog
+	WHERE cus_nm = (select cust_nm from kdt_cust_info_basc kcib where cust_sn = #{keyword});
+	</select>
+	<select id="list" resultMap="customerResultMap">
+	SELECT * FROM KDT_CUST_INFO_BASC
+	</select>
+	<select id="listFind" resultMap="customerResultMap">
+	SELECT * FROM KDT_CUST_INFO_BASC
+	WHERE cust_nm LIKE CONCAT('%',#{keyword},'%')
+	</select>
+	<select id="searchAdminOne" resultMap="customerResultMap">
+		SELECT * FROM KDT_CUST_INFO_BASC
+		WHERE cust_sn = #{keyword}
+	</select>
+	<update id="updateCustomer" parameterType="customerDto">
+      UPDATE KDT_CUST_INFO_BASC SET
+         CUST_NM = #{customerDto.CUST_NM},
+         PRIDTF_NO = #{customerDto.PRIDTF_NO},
+         EML_ADDR = #{customerDto.EML_ADDR},
+         HOME_TELNO = #{customerDto.HOME_TELNO},
+         MBL_TELNO = #{customerDto.MBL_TELNO},
+         CR_NM = #{customerDto.CR_NM},
+         ROAD_NM_ADDR = #{customerDto.ROAD_NM_ADDR}
+      	 WHERE CUST_SN = #{customerDto.CUST_SN}
+   </update>
+   <insert id="registerCustomer" parameterType="customerDto">
+    INSERT INTO KDT_CUST_INFO_BASC (
+        FRST_REG_DT, 
+        CUST_NM, 
+        PRIDTF_NO, 
+        EML_ADDR, 
+        HOME_TELNO, 
+        MBL_TELNO, 
+        CR_NM, 
+        ROAD_NM_ADDR,
+        BRDT
+    ) VALUES (
+        current_date, 
+        #{customerDto.CUST_NM}, 
+        #{customerDto.PRIDTF_NO}, 
+        #{customerDto.EML_ADDR}, 
+        #{customerDto.HOME_TELNO}, 
+        #{customerDto.MBL_TELNO}, 
+        #{customerDto.CR_NM}, 
+        #{customerDto.ROAD_NM_ADDR},
+        CONCAT(
+            CASE 
+                WHEN SUBSTRING(#{customerDto.PRIDTF_NO}::VARCHAR, 7, 1) IN ('1', '2') THEN '19' 
+                WHEN SUBSTRING(#{customerDto.PRIDTF_NO}::VARCHAR, 7, 1) IN ('0', '9') THEN '18' 
+                WHEN SUBSTRING(#{customerDto.PRIDTF_NO}::VARCHAR, 7, 1) IN ('3', '4') THEN '20' 
+                ELSE ''
+            END,
+            SUBSTRING(#{customerDto.PRIDTF_NO}::VARCHAR, 1, 6)
+        )
+    )
+</insert>
+
+   <delete id="deleteCustomer" parameterType="Long">
+      DELETE FROM KDT_CUST_INFO_BASC WHERE CUST_SN = #{CUST_SN}
+   </delete>
+</mapper>
