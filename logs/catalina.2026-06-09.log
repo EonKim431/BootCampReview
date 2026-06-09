@@ -1,0 +1,270 @@
+09-Jun-2026 11:20:31.005 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/10.1.55
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  May 5 2026 13:33:02 UTC
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  10.1.55.0
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Users\earne\.jdks\corretto-17.0.15
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.15+6-LTS
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Amazon.com Inc.
+09-Jun-2026 11:20:31.007 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:20:31.008 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:20:31.014 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Jun-2026 11:20:31.014 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\earne\OneDrive\문서\project-crm-master\temp
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\earne\OneDrive\문서\project-crm-master\conf\logging.properties
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=10778:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin
+09-Jun-2026 11:20:31.015 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dfile.encoding=UTF-8
+09-Jun-2026 11:20:31.024 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [C:\Users\earne\.jdks\corretto-17.0.15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NAT Service;C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Ninja;C:\Program Files\dotnet\;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\Program Files\cursor\resources\app\bin;C:\Program Files\PowerShell\7\;C:\Users\earne\AppData\Local\Programs\Python\Launcher\;C:\Users\earne\AppData\Local\Microsoft\WindowsApps;;C:\Users\earne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.4.1\bin;;C:\Users\earne\.dotnet\tools;C:\Users\earne\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\bin;.]
+09-Jun-2026 11:20:31.176 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8021"]을(를) 초기화합니다.
+09-Jun-2026 11:20:31.187 정보 [main] org.apache.catalina.startup.Catalina.load [365] 밀리초 내에 서버가 초기화되었습니다.
+09-Jun-2026 11:20:31.237 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+09-Jun-2026 11:20:31.237 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/10.1.55]
+09-Jun-2026 11:20:31.248 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치합니다.
+09-Jun-2026 11:20:31.279 경고 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 호스트 appBase 내의 docBase [C:\Users\earne\OneDrive\문서\project-crm-master\webapps]이(가) 지정되었으나, 이는 무시될 것입니다.
+09-Jun-2026 11:20:31.316 심각 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치하는 중 오류 발생
+	java.lang.IllegalStateException: 자식 컨테이너를 시작하는 중 오류 발생
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:600)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1878)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:524)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:415)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.apache.catalina.LifecycleException: 구성요소 [org.apache.catalina.webresources.StandardRoot@74287ea3]을(를) 시작하지 못했습니다.
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:404)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4151)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4273)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\earne\OneDrive\문서\project-crm-master\webapps\localhost] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:758)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 41 more
+09-Jun-2026 11:20:31.325 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]의 배치가 [74] 밀리초 내에 완료되었습니다.
+09-Jun-2026 11:20:31.329 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8021"]을(를) 시작합니다.
+09-Jun-2026 11:20:31.408 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [221] 밀리초 내에 시작되었습니다.
+09-Jun-2026 11:27:19.288 정보 [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8021"]을(를) 일시 정지 중
+09-Jun-2026 11:27:19.566 정보 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+09-Jun-2026 11:27:19.568 정보 [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8021"]을(를) 중지시킵니다.
+09-Jun-2026 11:27:19.570 정보 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8021"]을(를) 소멸시킵니다.
+09-Jun-2026 11:27:21.289 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/10.1.55
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  May 5 2026 13:33:02 UTC
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  10.1.55.0
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Users\earne\.jdks\corretto-17.0.15
+09-Jun-2026 11:27:21.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.15+6-LTS
+09-Jun-2026 11:27:21.294 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Amazon.com Inc.
+09-Jun-2026 11:27:21.294 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:27:21.294 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\earne\OneDrive\문서\project-crm-master\temp
+09-Jun-2026 11:27:21.302 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\earne\OneDrive\문서\project-crm-master\conf\logging.properties
+09-Jun-2026 11:27:21.303 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Jun-2026 11:27:21.303 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=13207:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin
+09-Jun-2026 11:27:21.303 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dfile.encoding=UTF-8
+09-Jun-2026 11:27:21.315 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [C:\Users\earne\.jdks\corretto-17.0.15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NAT Service;C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Ninja;C:\Program Files\dotnet\;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\Program Files\cursor\resources\app\bin;C:\Program Files\PowerShell\7\;C:\Users\earne\AppData\Local\Programs\Python\Launcher\;C:\Users\earne\AppData\Local\Microsoft\WindowsApps;;C:\Users\earne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.4.1\bin;;C:\Users\earne\.dotnet\tools;C:\Users\earne\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\bin;.]
+09-Jun-2026 11:27:21.443 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8021"]을(를) 초기화합니다.
+09-Jun-2026 11:27:21.455 정보 [main] org.apache.catalina.startup.Catalina.load [297] 밀리초 내에 서버가 초기화되었습니다.
+09-Jun-2026 11:27:21.490 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+09-Jun-2026 11:27:21.490 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/10.1.55]
+09-Jun-2026 11:27:21.498 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치합니다.
+09-Jun-2026 11:27:21.520 경고 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 호스트 appBase 내의 docBase [C:\Users\earne\OneDrive\문서\project-crm-master\webapps]이(가) 지정되었으나, 이는 무시될 것입니다.
+09-Jun-2026 11:27:21.548 심각 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치하는 중 오류 발생
+	java.lang.IllegalStateException: 자식 컨테이너를 시작하는 중 오류 발생
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:600)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1878)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:524)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:415)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.apache.catalina.LifecycleException: 구성요소 [org.apache.catalina.webresources.StandardRoot@74287ea3]을(를) 시작하지 못했습니다.
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:404)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4151)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4273)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\earne\OneDrive\문서\project-crm-master\webapps\localhost] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:758)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 41 more
+09-Jun-2026 11:27:21.556 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]의 배치가 [56] 밀리초 내에 완료되었습니다.
+09-Jun-2026 11:27:21.560 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8021"]을(를) 시작합니다.
+09-Jun-2026 11:27:21.653 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [198] 밀리초 내에 시작되었습니다.
+09-Jun-2026 11:28:06.985 정보 [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8021"]을(를) 일시 정지 중
+09-Jun-2026 11:28:07.264 정보 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+09-Jun-2026 11:28:07.265 정보 [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8021"]을(를) 중지시킵니다.
+09-Jun-2026 11:28:07.268 정보 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8021"]을(를) 소멸시킵니다.
+09-Jun-2026 11:28:08.320 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/10.1.55
+09-Jun-2026 11:28:08.324 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  May 5 2026 13:33:02 UTC
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  10.1.55.0
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Windows 11
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.0
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          amd64
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           C:\Users\earne\.jdks\corretto-17.0.15
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          17.0.15+6-LTS
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          Amazon.com Inc.
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:28:08.325 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:28:08.330 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Jun-2026 11:28:08.330 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.io=ALL-UNNAMED
+09-Jun-2026 11:28:08.330 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util=ALL-UNNAMED
+09-Jun-2026 11:28:08.330 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Jun-2026 11:28:08.330 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=C:\Users\earne\Downloads\apache-tomcat-10.1.55\apache-tomcat-10.1.55
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=C:\Users\earne\OneDrive\문서\project-crm-master
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=C:\Users\earne\OneDrive\문서\project-crm-master\temp
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=C:\Users\earne\OneDrive\문서\project-crm-master\conf\logging.properties
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\lib\idea_rt.jar=13220:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.2\bin
+09-Jun-2026 11:28:08.331 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dfile.encoding=UTF-8
+09-Jun-2026 11:28:08.346 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [C:\Users\earne\.jdks\corretto-17.0.15\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\NAT Service;C:\Program Files\Eclipse Adoptium\jdk-8.0.412.8-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Ninja;C:\Program Files\dotnet\;C:\Program Files\CMake\bin;C:\Program Files\nodejs\;C:\Program Files\cursor\resources\app\bin;C:\Program Files\PowerShell\7\;C:\Users\earne\AppData\Local\Programs\Python\Launcher\;C:\Users\earne\AppData\Local\Microsoft\WindowsApps;;C:\Users\earne\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1.4.1\bin;;C:\Users\earne\.dotnet\tools;C:\Users\earne\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA 2026.1.3\bin;.]
+09-Jun-2026 11:28:08.475 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8021"]을(를) 초기화합니다.
+09-Jun-2026 11:28:08.486 정보 [main] org.apache.catalina.startup.Catalina.load [313] 밀리초 내에 서버가 초기화되었습니다.
+09-Jun-2026 11:28:08.523 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+09-Jun-2026 11:28:08.523 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/10.1.55]
+09-Jun-2026 11:28:08.532 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치합니다.
+09-Jun-2026 11:28:08.555 경고 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 호스트 appBase 내의 docBase [C:\Users\earne\OneDrive\문서\project-crm-master\webapps]이(가) 지정되었으나, 이는 무시될 것입니다.
+09-Jun-2026 11:28:08.581 심각 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]을(를) 배치하는 중 오류 발생
+	java.lang.IllegalStateException: 자식 컨테이너를 시작하는 중 오류 발생
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:600)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:569)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:665)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:629)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1878)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:524)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:415)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1618)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:300)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:774)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:783)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1201)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1191)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:747)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:868)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:758)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+	Caused by: org.apache.catalina.LifecycleException: 구성요소 [org.apache.catalina.webresources.StandardRoot@2bdd8394]을(를) 시작하지 못했습니다.
+		at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:404)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:179)
+		at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:4151)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4273)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:597)
+		... 37 more
+	Caused by: java.lang.IllegalArgumentException: The main resource set specified [C:\Users\earne\OneDrive\문서\project-crm-master\webapps\localhost] is not a directory or war file, or is not readable (it does not exist or permissions to access it are missing)
+		at org.apache.catalina.webresources.StandardRoot.createMainResourceSet(StandardRoot.java:758)
+		at org.apache.catalina.webresources.StandardRoot.startInternal(StandardRoot.java:715)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		... 41 more
+09-Jun-2026 11:28:08.590 정보 [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\Users\earne\OneDrive\문서\project-crm-master\conf\Catalina\localhost\localhost.xml]의 배치가 [56] 밀리초 내에 완료되었습니다.
+09-Jun-2026 11:28:08.594 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8021"]을(를) 시작합니다.
+09-Jun-2026 11:28:08.682 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [194] 밀리초 내에 시작되었습니다.
+09-Jun-2026 11:31:25.036 정보 [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8021"]을(를) 일시 정지 중
+09-Jun-2026 11:31:25.318 정보 [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+09-Jun-2026 11:31:25.319 정보 [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8021"]을(를) 중지시킵니다.
+09-Jun-2026 11:31:25.321 정보 [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8021"]을(를) 소멸시킵니다.
