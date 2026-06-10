@@ -70,7 +70,7 @@ public class CustomerController {
 
 	@PostMapping("/searchAllAjax")
 	@ResponseBody
-	public List<CustomerDto> getListAllAdmin(@RequestBody Map<String, String> body) {
+	public List<CustomerDto> getListAllCustomers() {
 		List<CustomerDto> customers = customerService.list();
 
 		log.debug("searchAllAjax response. resultCount={}", customers.size());
@@ -79,7 +79,7 @@ public class CustomerController {
 
 	@PostMapping("/searchOneAjax")
 	@ResponseBody
-	public CustomerDto getOneListAdmin(@RequestBody Map<String, String> body) {
+	public CustomerDto getOneListCustomer(@RequestBody Map<String, String> body) {
 		String keywordStr = body.get("keyword");
 		log.info("searchOneAjax request. keyword={}", keywordStr);
 
