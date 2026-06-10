@@ -63,7 +63,7 @@ public class CustomerController {
 
 	@PostMapping("/searchAllAjax")
 	@ResponseBody
-	public List<CustomerDto> getAllCustomers(@RequestBody Map<String, String> body) {
+	public List<CustomerDto> getAllCustomers() {
 		List<CustomerDto> customers = customerService.list();
 
 		log.debug("searchAllAjax response. resultCount={}", customers.size());
@@ -80,7 +80,7 @@ public class CustomerController {
 		CustomerDto customer = customerService.findCustomerBySn(customerSn);
 
 		if (customer != null) {
-			log.debug("searchOneAjax response. custSn={}", customer.getCUST_SN());
+			log.debug("searchOneAjax response. customer found. customerSn={}", customerSn);
 		} else {
 			log.debug("searchOneAjax response. customer not found. customerSn={}", customerSn);
 		}
@@ -101,7 +101,7 @@ public class CustomerController {
 	public void updateCustomer(@ModelAttribute CustomerDto customerDTO) {
 		customerService.updateCustomer(customerDTO);
 
-		log.info("updateCustomer completed. custSn={}", customerDTO.getCUST_SN());
+		log.info("updateCustomer completed.");
 	}
 
 	@PostMapping("/deleteCustomer")
