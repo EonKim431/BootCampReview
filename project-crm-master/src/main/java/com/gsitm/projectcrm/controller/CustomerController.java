@@ -1,5 +1,6 @@
 package com.gsitm.projectcrm.controller;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -42,7 +43,13 @@ public class CustomerController {
 		String keywordStr = body.get("keyword");
 		log.info("TextLogAjax request. keyword={}", keywordStr);
 
-		Long keyword = Long.parseLong(keywordStr);
+		Long keyword = parseKeyword(keywordStr);
+
+		if (keyword == null) {
+			log.warn("TextLogAjax request rejected. invalid keyword={}", keywordStr);
+			return Collections.emptyList();
+		}
+
 		List<TextLogDto> textLogDtos = customerService.getDTOInfo(keyword);
 
 		log.debug("TextLogAjax response. resultCount={}", textLogDtos.size());
@@ -76,7 +83,13 @@ public class CustomerController {
 		String keywordStr = body.get("keyword");
 		log.info("searchOneAjax request. keyword={}", keywordStr);
 
-		Long keyword = Long.parseLong(keywordStr);
+		Long keyword = parseKeyword(keywordStr);
+
+		if (keyword == null) {
+			log.warn("searchOneAjax request rejected. invalid keyword={}", keywordStr);
+			return null;
+		}
+
 		CustomerDto customer = customerService.searchAdminOne(keyword);
 
 		if (customer != null) {
@@ -111,5 +124,19 @@ public class CustomerController {
 
 		log.info("deleteCustomer completed. custSn={}", CUST_SN);
 		return "Customer deleted successfully";
+	}
+
+	private Long parseKeyword(String keywordStr) {
+		if (keywordStr == null || keywordStr.trim().isEmpty()) {
+			log.warn("Invalid keyword. keyword is empty.");
+			return null;
+		}
+
+		try {
+			return Long.parseLong(keywordStr);
+		} catch (NumberFormatException e) {
+			log.warn("Invalid keyword format. keyword={}", keywordStr);
+			return null;
+		}
 	}
 }
