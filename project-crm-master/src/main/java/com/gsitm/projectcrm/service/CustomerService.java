@@ -9,40 +9,37 @@ import com.gsitm.projectcrm.dto.CustomerDto;
 import com.gsitm.projectcrm.dto.TextLogDto;
 import com.gsitm.projectcrm.mapper.CustomerMapper;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @Service
 public class CustomerService {
-	@Autowired 
-	CustomerMapper customerMapper;
 
-	public List<TextLogDto> getDTOInfo(Long keyword){
-		return customerMapper.getDTOInfo(keyword);
+	@Autowired
+	private CustomerMapper customerMapper;
+
+	public List<TextLogDto> getTextLogsByCustomerSn(Long customerSn) {
+		return customerMapper.getTextLogsByCustomerSn(customerSn);
 	}
 
 	public List<CustomerDto> list() {
-		// TODO Auto-generated method stub
 		return customerMapper.list();
 	}
 
 	public List<CustomerDto> listFind(String keyword) {
-		// TODO Auto-generated method stub
 		return customerMapper.listFind(keyword);
 	}
 
-	public CustomerDto searchAdminOne(Long keyword) {
-		// TODO Auto-generated method stub
-		return customerMapper.searchAdminOne(keyword);
+	public CustomerDto findCustomerBySn(Long customerSn) {
+		return customerMapper.findCustomerBySn(customerSn);
 	}
+
 	public void updateCustomer(CustomerDto customerDTO) {
-	      customerMapper.updateCustomer(customerDTO);
-	   }
-	public void registerCustomer(CustomerDto customerDTO) {
-		   customerMapper.registerCustomer(customerDTO);
+		customerMapper.updateCustomer(customerDTO);
 	}
+
+	public void registerCustomer(CustomerDto customerDTO) {
+		customerMapper.registerCustomer(customerDTO);
+	}
+
 	public void deleteCustomer(Long CUST_SN) {
-	      customerMapper.deleteCustomer(CUST_SN);
-	      
-	   }
+		customerMapper.deleteCustomer(CUST_SN);
+	}
 }

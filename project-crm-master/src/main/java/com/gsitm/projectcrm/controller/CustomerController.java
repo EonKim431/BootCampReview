@@ -1,6 +1,5 @@
 package com.gsitm.projectcrm.controller;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -39,18 +38,12 @@ public class CustomerController {
 
 	@PostMapping("/TextLogAjax")
 	@ResponseBody
-	public List<TextLogDto> textLog(@RequestBody Map<String, String> body) {
+	public List<TextLogDto> getCustomerTextLogs(@RequestBody Map<String, String> body) {
 		String keywordStr = body.get("keyword");
 		log.info("TextLogAjax request. keyword={}", keywordStr);
 
-		Long keyword = parseKeyword(keywordStr);
-
-		if (keyword == null) {
-			log.warn("TextLogAjax request rejected. invalid keyword={}", keywordStr);
-			return Collections.emptyList();
-		}
-
-		List<TextLogDto> textLogDtos = customerService.getDTOInfo(keyword);
+		Long customerSn = Long.parseLong(keywordStr);
+		List<TextLogDto> textLogDtos = customerService.getTextLogsByCustomerSn(customerSn);
 
 		log.debug("TextLogAjax response. resultCount={}", textLogDtos.size());
 		return textLogDtos;
@@ -58,7 +51,7 @@ public class CustomerController {
 
 	@PostMapping("/searchAjax")
 	@ResponseBody
-	public List<CustomerDto> getListAdmin(@RequestBody Map<String, String> body) {
+	public List<CustomerDto> searchCustomers(@RequestBody Map<String, String> body) {
 		String keyword = body.get("keyword");
 		log.info("searchAjax request. keyword={}", keyword);
 
@@ -70,7 +63,7 @@ public class CustomerController {
 
 	@PostMapping("/searchAllAjax")
 	@ResponseBody
-	public List<CustomerDto> getListAllCustomers() {
+	public List<CustomerDto> getAllCustomers(@RequestBody Map<String, String> body) {
 		List<CustomerDto> customers = customerService.list();
 
 		log.debug("searchAllAjax response. resultCount={}", customers.size());
@@ -79,23 +72,17 @@ public class CustomerController {
 
 	@PostMapping("/searchOneAjax")
 	@ResponseBody
-	public CustomerDto getOneListCustomer(@RequestBody Map<String, String> body) {
+	public CustomerDto getCustomer(@RequestBody Map<String, String> body) {
 		String keywordStr = body.get("keyword");
 		log.info("searchOneAjax request. keyword={}", keywordStr);
 
-		Long keyword = parseKeyword(keywordStr);
-
-		if (keyword == null) {
-			log.warn("searchOneAjax request rejected. invalid keyword={}", keywordStr);
-			return null;
-		}
-
-		CustomerDto customer = customerService.searchAdminOne(keyword);
+		Long customerSn = Long.parseLong(keywordStr);
+		CustomerDto customer = customerService.findCustomerBySn(customerSn);
 
 		if (customer != null) {
 			log.debug("searchOneAjax response. custSn={}", customer.getCUST_SN());
 		} else {
-			log.debug("searchOneAjax response. customer not found. keyword={}", keyword);
+			log.debug("searchOneAjax response. customer not found. customerSn={}", customerSn);
 		}
 
 		return customer;
@@ -124,19 +111,5 @@ public class CustomerController {
 
 		log.info("deleteCustomer completed. custSn={}", CUST_SN);
 		return "Customer deleted successfully";
-	}
-
-	private Long parseKeyword(String keywordStr) {
-		if (keywordStr == null || keywordStr.trim().isEmpty()) {
-			log.warn("Invalid keyword. keyword is empty.");
-			return null;
-		}
-
-		try {
-			return Long.parseLong(keywordStr);
-		} catch (NumberFormatException e) {
-			log.warn("Invalid keyword format. keyword={}", keywordStr);
-			return null;
-		}
 	}
 }

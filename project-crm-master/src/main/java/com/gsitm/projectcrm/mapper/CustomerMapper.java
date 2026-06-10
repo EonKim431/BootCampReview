@@ -9,19 +9,19 @@ import com.gsitm.projectcrm.dto.CustomerDto;
 import com.gsitm.projectcrm.dto.TextLogDto;
 
 @Mapper
-
 public interface CustomerMapper {
 
-	List<TextLogDto> getDTOInfo(@Param("keyword")Long keyword);
+	List<TextLogDto> getTextLogsByCustomerSn(@Param("customerSn") Long customerSn);
 
 	List<CustomerDto> list();
 
 	List<CustomerDto> listFind(String keyword);
 
-	CustomerDto searchAdminOne(Long keyword);
-	
-	void updateCustomer(@Param("customerDto")CustomerDto customerDTO);
-	
-	void registerCustomer(@Param("customerDto")CustomerDto customerDTO);
-	void deleteCustomer(@Param("CUST_SN")Long CUST_SN);
+	CustomerDto findCustomerBySn(@Param("customerSn") Long customerSn);
+
+	void updateCustomer(@Param("customerDto") CustomerDto customerDTO);
+
+	void registerCustomer(@Param("customerDto") CustomerDto customerDTO);
+
+	void deleteCustomer(@Param("CUST_SN") Long CUST_SN);
 }
