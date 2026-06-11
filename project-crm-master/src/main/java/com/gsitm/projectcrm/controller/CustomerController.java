@@ -90,18 +90,30 @@ public class CustomerController {
 
 	@PostMapping("/registerCustomer")
 	@ResponseBody
-	public void registerCustomer(@ModelAttribute CustomerDto customerDTO) {
-		customerService.registerCustomer(customerDTO);
+	public String registerCustomer(@ModelAttribute CustomerDto customerDTO) {
+		try {
+			customerService.registerCustomer(customerDTO);
 
-		log.info("registerCustomer completed.");
+			log.info("registerCustomer completed.");
+			return "success";
+		} catch (IllegalArgumentException e) {
+			log.warn("registerCustomer rejected. reason={}", e.getMessage());
+			return e.getMessage();
+		}
 	}
 
 	@PostMapping("/updateCustomer")
 	@ResponseBody
-	public void updateCustomer(@ModelAttribute CustomerDto customerDTO) {
-		customerService.updateCustomer(customerDTO);
+	public String updateCustomer(@ModelAttribute CustomerDto customerDTO) {
+		try {
+			customerService.updateCustomer(customerDTO);
 
-		log.info("updateCustomer completed.");
+			log.info("updateCustomer completed.");
+			return "success";
+		} catch (IllegalArgumentException e) {
+			log.warn("updateCustomer rejected. reason={}", e.getMessage());
+			return e.getMessage();
+		}
 	}
 
 	@PostMapping("/deleteCustomer")

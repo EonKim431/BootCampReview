@@ -32,4 +32,31 @@ public class CustomerDto {
             return "{}"; // 예외 발생 시 빈 JSON 객체 반환
         }
     }
+    public String getCUST_NM() {
+        return CUST_NM;
+    }
+
+    public String getEML_ADDR() {
+        return EML_ADDR;
+    }
+
+    public String getHOME_TELNO() {
+        return HOME_TELNO;
+    }
+
+    public String getMBL_TELNO() {
+        return MBL_TELNO;
+    }
+
+    public String getPRIDTF_NO() {
+        return PRIDTF_NO;
+    }
+
+    public String getCR_NM() {
+        return CR_NM;
+    }
+
+    public String getROAD_NM_ADDR() {
+        return ROAD_NM_ADDR;
+    }
 }
